@@ -5,7 +5,12 @@ set(OpenCV_LIBS /usr/local/lib)
 set(OpenCV_INCLUDE_DIRS /usr/local/include)
 endif()
 
-project( RIPOC CXX )
+# if OpenCV2.4 is your choice, add paths like...
+# set(OpenCV_DIR /Users/mhirano/opencv-2.4.13.2/build)           
+# set(OpenCV_LIBS /Users/mhirano/opencv-2.4.13.2/build/lib)
+# set(OpenCV_INCLUDE_DIRS /Users/mhirano/opencv-2.4.13.2/include)
+
+project( SAMPLE CXX )
 find_package( OpenCV REQUIRED )
 
 # Check C++11 support and activate
