@@ -55,5 +55,5 @@ bulid/20170316_fine_50kmph-200ms-300fps_comptime.csv
 bulid/20170316_fine_50kmph-200ms-300fps_velocity.csv
 bulid/CMakeFiles/CMakeTmp/
 
-## 例外リスト
+## Exception list
 !.gitkeep
