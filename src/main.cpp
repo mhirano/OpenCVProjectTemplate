@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
 	imshow("win", lena);
 	 
 	cout << "Lena!" << endl;
-	cvWaitKey();
+	WaitKey();
 	
 	return 0;
 }
