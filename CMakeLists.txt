@@ -6,7 +6,7 @@ project( SAMPLE CXX )
 if (UNIX AND NOT APPLE) #Ubuntu...
 	message(STATUS ">>> Linux")
 
-	set(OpenCV_DIR /home/mhirano/opencv-3.4.1-tuned/build)
+	set(OpenCV_DIR /home/mhirano/opencv-3.2.0/build)
 
 	include_directories(/usr/include)
 	link_directories(/usr/lib/x86_64-linux-gnu)
