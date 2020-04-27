@@ -1,18 +1,17 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
-using namespace cv;
 using namespace std;
 
 int main(int argc, char **argv) {
 
-	Mat lena = imread("../data/lena.png");
+	cv::Mat lena = cv::imread("../data/lena.png");
 
-	namedWindow("win");
-	imshow("win", lena);
+	cv::namedWindow("win");
+	cv::imshow("win", lena);
 	 
-	cout << "Lena!" << endl;
-	waitKey();
+	std::cout << "Lena!" << std::endl;
+	cv::waitKey();
 	
 	return 0;
 }
