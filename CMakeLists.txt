@@ -14,7 +14,7 @@ if (UNIX AND NOT APPLE) #Ubuntu...
 else(APPLE)
 	message(STATUS ">>> Mac")
 
-	set(OpenCV_DIR /Users/mhirano/opencv-3.4.1-tuned/release)
+	set(OpenCV_DIR /Users/mhirano/opencv-4.3.0/build)
 
 	# Add include directory	(environment specific)
 	include_directories(/usr/local/include)
@@ -41,7 +41,7 @@ else()
 	message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++14 support. Please use a different C++ compiler.")
 endif()
 
-set(CMAKE_CXX_FLAGS_DEBUG "-DDEBUG -g -pg")
+set(CMAKE_CXX_FLAGS_DEBUG "-DDEBUG -g")
 message(STATUS "${CMAKE_CXX_FLAGS_DEBUG}")
 set(CMAKE_CXX_FLAGS_RELEASE "-DRELEASE -O3 -DNDEBUG -march=native")
 message(STATUS "${CMAKE_CXX_FLAGS_RELEASE}")
